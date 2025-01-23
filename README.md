@@ -9,6 +9,7 @@ Bienvenido a este repositorio, una guía organizada para aprender y dominar **No
 - Instalación en Windows y Linux
 - Gestión de dependencias, `package.json` y `node_modules`
 - Ejemplo básico: Uso de dependencias (`@colors/colors` y `axios`)
+- Creacion y uso de módulos
 
 ### 2. Express.js (próximamente)
 - ¿Qué es Express?
