@@ -1,0 +1,15 @@
+{
+  "name": "curso-node",
+  "version": "1.0.0",
+  "description": "curso node primeras pruebas",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Fernando",
+  "license": "ISC",
+  "dependencies": {
+    "@colors/colors": "^1.6.0",
+    "axios": "^1.7.9"
+  }
+}
