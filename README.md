@@ -11,6 +11,10 @@ Bienvenido a este repositorio, una guía organizada para aprender y dominar **No
 - Ejemplo básico: Uso de dependencias (`@colors/colors` y `axios`)
 - Creacion y uso de módulos
 
+### 2. [Node Core](node-core.md)
+- **Objeto Global**: Uso de `__dirname` y `__filename` para rutas absolutas.
+- **Control de Procesos**: Gestión de argumentos con `process.argv` y su aplicación práctica.
+
 ### 2. Express.js (próximamente)
 - ¿Qué es Express?
 - Configuración inicial
