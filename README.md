@@ -15,6 +15,14 @@ Bienvenido a este repositorio, una guía organizada para aprender y dominar **No
 - **Objeto Global**: Uso de `__dirname` y `__filename` para rutas absolutas.
 - **Control de Procesos**: Gestión de argumentos con `process.argv` y su aplicación práctica.
 
+### 3. [File System](file-system.md)
+- **Lectura de Directorios**: Usando `fs` y `fs/promises`.
+- **Lectura y Escritura de Ficheros**: Operaciones básicas con `fs.readFile` y `fs.writeFile`.
+- **Operaciones Básicas sobre Ficheros**: Renombrar y eliminar archivos.
+- **Streams de Lectura**: Manejo de grandes volúmenes de datos de manera eficiente.
+- **Streams de Escritura**: Uso del módulo `readline` para crear interfaces de escritura.
+
+
 ### 2. Express.js (próximamente)
 - ¿Qué es Express?
 - Configuración inicial
