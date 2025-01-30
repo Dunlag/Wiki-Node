@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "nombre": "Camiseta de algodón",
+        "descripcion": "Camiseta de manga corta, 100% algodón.",
+        "precio": 19.99,
+        "categoria": "Ropa",
+        "imagen": "camiseta.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Pantalón vaquero",
+        "descripcion": "Pantalón vaquero de corte recto.",
+        "precio": 49.99,
+        "categoria": "Ropa",
+        "imagen": "vaqueros.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Zapatillas deportivas",
+        "descripcion": "Zapatillas deportivas para correr.",
+        "precio": 79.99,
+        "categoria": "Calzado",
+        "imagen": "zapatillas.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Bolso de mano",
+        "descripcion": "Bolso de mano de cuero.",
+        "precio": 99.99,
+        "categoria": "Accesorios",
+        "imagen": "bolso.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Reloj de pulsera",
+        "descripcion": "Reloj de pulsera para hombre.",
+        "precio": 149.99,
+        "categoria": "Accesorios",
+        "imagen": "reloj.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "Libro: 'Cien años de soledad'",
+        "descripcion": "Novela de Gabriel García Márquez.",
+        "precio": 12.99,
+        "categoria": "Libros",
+        "imagen": "cien_anios_soledad.jpg"
+    },
+    {
+        "id": 7,
+        "nombre": "Portátil",
+        "descripcion": "Portátil con procesador Intel Core i5.",
+        "precio": 799.99,
+        "categoria": "Informática",
+        "imagen": "portatil.jpg"
+    },
+    {
+        "id": 8,
+        "nombre": "Móvil",
+        "descripcion": "Móvil con cámara de 50 MP.",
+        "precio": 699.99,
+        "categoria": "Telefonía",
+        "imagen": "movil.jpg"
+    },
+    {
+        "id": 9,
+        "nombre": "Televisor",
+        "descripcion": "Televisor de 55 pulgadas.",
+        "precio": 599.99,
+        "categoria": "Electrónica",
+        "imagen": "televisor.jpg"
+    },
+    {
+        "id": 10,
+        "nombre": "Tablet",
+        "descripcion": "Tablet de 10 pulgadas.",
+        "precio": 299.99,
+        "categoria": "Informática",
+        "imagen": "tablet.jpg"
+    }
+]
