@@ -1,0 +1,4 @@
+GET http://localhost:3333/contactos
+
+###
+POST http://localhost:3333/usuarios/nuevo
