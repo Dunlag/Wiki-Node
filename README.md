@@ -29,11 +29,17 @@ Bienvenido a este repositorio, una guía organizada para aprender y dominar **No
 - **Peticiones de tipo POST**: Recepción y procesamiento de datos enviados mediante formularios HTML.
 - **Respuestas con JSON**: Creación de servidores API simples que devuelven datos en formato JSON.
 
-### 5. Express.js
-- **Caracteristicas de ExpressJS**
-- Configuración inicial
-- Rutas y middleware
-- Manejo de errores
+
+### 5. [Express.js](express.md)
+- **Características de Express.js**: Introducción a Express.js, un framework minimalista y flexible para Node.js que facilita la creación de servidores web.
+- **Arquitectura de aplicaciones Express.js**: Estructura básica de una aplicación Express, con rutas, middleware y controladores.
+- **Gestión de rutas**: Definición y manejo de rutas HTTP utilizando `app.get`, `app.post`, etc.
+- **Parámetros variables en la URL**: Uso de parámetros en las rutas para capturar valores dinámicos desde la URL, como `:id`.
+- **Recuperando el body de la petición**: Manejo de datos enviados en el cuerpo de las peticiones, utilizando middleware como `express.json()` o `express.urlencoded()`.
+- **Query params**: Acceso a parámetros de consulta en la URL con `req.query`.
+- **Creación y uso de middleware**: Implementación de funciones middleware para procesar solicitudes antes de llegar a las rutas o respuestas.
+- **Tipos de respuestas**: Envío de respuestas con diferentes formatos, como texto, HTML, JSON, etc., utilizando `res.send`, `res.json`, `res.render`, entre otros.
+
 
 ### 3. Despliegue de Aplicaciones (próximamente)
 - Configuración de servidores
