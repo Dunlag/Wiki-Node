@@ -1,0 +1,79 @@
+#!/usr/bin/env node
+
+/**
+ * Módulos necesarios.
+ */
+var app = require('../app'); // Importa la aplicación Express desde el archivo principal.
+var debug = require('debug')('primeraapp:server'); // Módulo de depuración para mostrar mensajes en consola.
+var http = require('http'); // Módulo HTTP de Node.js para crear el servidor.
+
+/**
+ * Obtiene el puerto desde la variable de entorno o usa el puerto 3000 por defecto.
+ */
+var port = normalizePort(process.env.PORT || '3000');
+app.set('port', port); // Configura el puerto en la aplicación Express.
+
+/**
+ * Crea el servidor HTTP y lo asocia con la aplicación Express.
+ */
+var server = http.createServer(app);
+
+/**
+ * Hace que el servidor escuche en el puerto proporcionado.
+ */
+server.listen(port);
+server.on('error', onError); // Maneja errores en la creación del servidor.
+server.on('listening', onListening); // Evento cuando el servidor está escuchando.
+
+/**
+ * Normaliza un puerto convirtiéndolo en un número, cadena o false si no es válido.
+ */
+function normalizePort(val) {
+  var port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // Si no es un número, se asume que es un pipe con nombre.
+    return val;
+  }
+
+  if (port >= 0) {
+    // Si es un número válido, se devuelve el número de puerto.
+    return port;
+  }
+
+  return false;
+}
+
+/**
+ * Maneja los errores que puedan ocurrir en el servidor.
+ */
+function onError(error) {
+  if (error.syscall !== 'listen') {
+    throw error;
+  }
+
+  var bind = typeof port === 'string' ? 'Pipe ' + port : 'Port ' + port;
+
+  // Maneja errores específicos al intentar escuchar en el puerto.
+  switch (error.code) {
+    case 'EACCES':
+      console.error(bind + ' requiere privilegios elevados');
+      process.exit(1);
+      break;
+    case 'EADDRINUSE':
+      console.error(bind + ' ya está en uso');
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+}
+
+/**
+ * Maneja el evento cuando el servidor comienza a escuchar.
+ */
+function onListening() {
+  var addr = server.address(); // Obtiene la dirección en la que está escuchando el servidor.
+  var bind = typeof addr === 'string' ? 'pipe ' + addr : 'puerto ' + addr.port;
+  debug('Escuchando en ' + bind); // Muestra un mensaje en la consola para depuración.
+}
