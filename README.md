@@ -43,7 +43,7 @@ Bienvenido a este repositorio, una guía organizada para aprender y dominar **No
 ## Cómo usar este repositorio
 1. Clona el repositorio:
    ```bash
-   git clone <url-del-repositorio>
+   git clone https://github.com/Dunlag/Wiki-Node.git
    ```
 2. Explora las secciones según tus necesidades.
 3. Contribuye: Si encuentras errores o tienes sugerencias, no dudes en abrir un *pull request* o una *issue*.
