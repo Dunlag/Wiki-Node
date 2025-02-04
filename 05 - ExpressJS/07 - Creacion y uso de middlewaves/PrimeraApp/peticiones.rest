@@ -1,0 +1,18 @@
+GET http://localhost:3000/products?page=3&limit=10
+
+###
+GET http://localhost:3000/products/8891
+
+###
+GET http://localhost:3000/products/new
+
+###
+POST http://localhost:3000/products/create
+Content-Type: application/json
+
+{
+    "name": "Laptop",
+    "price": 1000,
+    "stock": 10,
+    "avaliable": true
+}
