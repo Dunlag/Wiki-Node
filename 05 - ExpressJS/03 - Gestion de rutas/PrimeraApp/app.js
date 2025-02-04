@@ -6,7 +6,8 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-
+//importando las rutas de productos
+const productsRouter = require('./routes/products')
 var app = express();
 
 // view engine setup
@@ -21,6 +22,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+//usando el archivo de rutas de productos
+app.use('/products', productsRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
