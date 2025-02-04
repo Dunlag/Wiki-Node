@@ -1,9 +1,15 @@
-var express = require('express');
-var router = express.Router();
+const router = require("express").Router();
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+router.get("/", (req, res) => {
+  res.send("lista de usuarios");
+});
+
+router.get("/edit", (req, res) => {
+  res.send("formulario de edicion");
+});
+
+router.post("/update", (req, res) => {
+  res.send("gestion del formulario de edicion");
 });
 
 module.exports = router;
