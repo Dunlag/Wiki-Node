@@ -17,3 +17,18 @@ div
     p esta disponible 
   else 
     p no esta disponible
+
+div 
+  ul 
+  - for(let i = 0; i<animales.length; i++)
+    li= animales[i]
+
+div 
+  - animales = []
+  //comentatios en HTML 
+  //- Comentarios de tipo PUG
+  ul 
+    each animal in animales 
+      li Animal: #{animal}
+    else 
+      li No hay animales 
