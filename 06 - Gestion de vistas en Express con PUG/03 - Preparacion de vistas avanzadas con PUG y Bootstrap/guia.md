@@ -3,14 +3,6 @@
 
 Esta guía cubre la integración de Bootstrap con el motor de plantillas Pug para facilitar la creación de diseños rápidos y fluidos en aplicaciones Node.js y Express.
 
-## Instalación
-
-Antes de comenzar, asegúrate de tener Pug instalado en tu proyecto de Node.js. Si aún no lo has hecho, puedes instalarlo con el siguiente comando:
-
-```bash
-npm install pug
-```
-
 ## Integración de Bootstrap en Pug
 
 Para integrar Bootstrap, puedes incluir los links de CSS y JS directamente en tu archivo `layout.pug`. Estos links se pueden obtener desde el sitio web [BootstrapCDN](https://www.bootstrapcdn.com/). Aquí te muestro cómo integrarlos en tu archivo `layout.pug`:
