@@ -2,6 +2,9 @@ extends layout
 
 block content
   h1= title
+  he#numClientes
+  ul#mensajes 
+
   div 
     label Nombre 
     input#inputUsuario(type="text")
@@ -17,6 +20,8 @@ block content
     const inputUsuario = document.getElementById('inputUsuario')
     const inputMensaje = document.getElementById('inputMensaje')
     const btnEnviar = document.getElementById('btnEnviar')
+    const mensajes = document.getElementById('mensajes')
+    const numClientes = document.getElementById('numClientes')
 
     btnEnviar.addEventListener('click', ()=>{
       socket.emit('mensaje_chat', {
@@ -26,5 +31,12 @@ block content
     });
 
     socket.on('mensaje_chat', data =>{
-      console.log(data);
+      const li = document.createElement('li');
+      li.innerText = `${data.usuario} : ${data.mensaje}`;
+
+      mensajes.append(li);
     })
+
+    socket.on('num_clientes', num =>{
+      numClientes.innerText = `Clientes conectados: ${num}`
+    });

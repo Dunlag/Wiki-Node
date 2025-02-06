@@ -16,19 +16,36 @@ var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
 /**
- * Create HTTP server.
+ * Crear el servidor HTTP.
  */
-
 var server = http.createServer(app);
 
 const io = require('socket.io')(server);
 
-io.on('connection', (socket) => { // <-- Obtén el objeto socket aquí
-  console.log('se ha conectado un nuevo cliente');
+io.on('connection', (socket) => {
+  console.log('Se ha conectado un nuevo cliente');
+  
+  // Notificar a todos menos al nuevo cliente
+  socket.broadcast.emit('mensaje_chat', {
+    usuario: 'INFO',
+    mensaje: 'Se ha conectado un nuevo usuario'
+  });
+  
+  // Enviar la cantidad de clientes conectados
+  io.emit('num_clientes', io.engine.clientsCount);
 
-  socket.on('mensaje_chat', (data) => { // <-- Usa socket y en minúsculas
-    //console.log(data);
-    io.emit('mensaje_chat', data)
+  // Manejo de mensajes del chat
+  socket.on('mensaje_chat', (data) => {
+    io.emit('mensaje_chat', data);
+  });
+
+  // Manejo de desconexión de un cliente
+  socket.on('disconnect', () => {
+    io.emit('num_clientes', io.engine.clientsCount);
+    io.emit('mensaje_chat', {
+      usuario: 'INFO',
+      mensaje: 'Se ha desconectado un cliente'
+    });
   });
 });
 
