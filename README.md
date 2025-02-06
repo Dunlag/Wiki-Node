@@ -41,10 +41,8 @@ Bienvenido a este repositorio, una guía organizada para aprender y dominar **No
 - **Tipos de respuestas**: Envío de respuestas con diferentes formatos, como texto, HTML, JSON, etc., utilizando `res.send`, `res.json`, `res.render`, entre otros.
 
 
-### 3. Despliegue de Aplicaciones (próximamente)
-- Configuración de servidores
-- Uso de Docker
-- Despliegue en plataformas cloud
+### 3. Despliegue de Aplicaciones 
+- Despliegue de aplicaciones en [Render.com](https://render.com/)
 
 ## Cómo usar este repositorio
 1. Clona el repositorio:
