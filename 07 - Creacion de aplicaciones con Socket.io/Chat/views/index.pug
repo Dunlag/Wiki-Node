@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  h1= title
+  div 
+    label Nombre 
+    input#inputUsuario(type="text")
+  div 
+    label Mensaje 
+    input#inputMensaje(type="text")
+  button#btnEnviar Enviar
+
+  script(src="/socket.io/socket.io.js")
+  script.
+    const socket = io();
+
+    const inputUsuario = document.getElementById('inputUsuario')
+    const inputMensaje = document.getElementById('inputMensaje')
+    const btnEnviar = document.getElementById('btnEnviar')
+
+    btnEnviar.addEventListener('click', ()=>{
+      socket.emit('mensaje_chat', {
+        usuario: inputUsuario.value,
+        mensaje: inputMensaje.value
+      });
+    });
+
+    socket.on('mensaje_chat', data =>{
+      console.log(data);
+    })
