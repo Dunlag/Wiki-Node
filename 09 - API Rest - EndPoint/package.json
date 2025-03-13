@@ -1,0 +1,15 @@
+{
+  "name": "node-express",
+  "version": "0.0.1",
+  "description": "Rest API Curso",
+  "main": "index.js",
+  "repository": "https://github.com/Dunlag/Wiki-Node",
+  "author": "Fernando Pinilla",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
