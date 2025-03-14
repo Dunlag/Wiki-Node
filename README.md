@@ -29,7 +29,6 @@ Bienvenido a este repositorio, una guía organizada para aprender y dominar **No
 - **Peticiones de tipo POST**: Recepción y procesamiento de datos enviados mediante formularios HTML.
 - **Respuestas con JSON**: Creación de servidores API simples que devuelven datos en formato JSON.
 
-
 ### 5. [Express.js](express.md)
 - **Características de Express.js**: Introducción a Express.js, un framework minimalista y flexible para Node.js que facilita la creación de servidores web.
 - **Arquitectura de aplicaciones Express.js**: Estructura básica de una aplicación Express, con rutas, middleware y controladores.
@@ -40,9 +39,27 @@ Bienvenido a este repositorio, una guía organizada para aprender y dominar **No
 - **Creación y uso de middleware**: Implementación de funciones middleware para procesar solicitudes antes de llegar a las rutas o respuestas.
 - **Tipos de respuestas**: Envío de respuestas con diferentes formatos, como texto, HTML, JSON, etc., utilizando `res.send`, `res.json`, `res.render`, entre otros.
 
+### 6. [Gestión de Vistas en Express con Pug](gestion-vistas-pug.md)
+- **Instalación y configuración de Pug**
+- **Renderizado de vistas con datos dinámicos**
+- **Estructura y uso de layouts y partials**
+- **Integración con Bootstrap**
 
-### 3. Despliegue de Aplicaciones 
-- Despliegue de aplicaciones en [Render.com](https://render.com/)
+### 7. [Creación de una Aplicación con Socket.io](socket-io.md)
+- **Instalación y configuración de Socket.io**
+- **Comunicación en tiempo real entre cliente y servidor**
+- **Manejo de eventos personalizados**
+- **Ejemplo práctico: Chat en tiempo real**
+
+### 8. [Despliegue de Aplicaciones](despliegue.md)
+- **Despliegue de aplicaciones en [Render.com](https://render.com/)**
+
+### 9. [Creación de una API Rest - EndPoint](api-rest.md)
+- **Diseño y estructura de una API REST**
+- **Creación de un gestor de tareas**
+- **Uso de `Yarn` en lugar de `npm`**
+- **Manejo de CRUD con Express y MongoDB/PostgreSQL**
+- **Implementación de autenticación básica**
 
 ## Cómo usar este repositorio
 1. Clona el repositorio:
