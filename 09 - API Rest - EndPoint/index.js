@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const app = require("./app");
 const port = 3000;
 
-const urlMongoDB = "mongodb+srv://admin:XkTI39KmYJFLEkTg@fernandodb.sdyqz.mongodb.net/";
+//const urlMongoDB = "mongodb+srv://admin:XkTI39KmYJFLEkTg@fernandodb.sdyqz.mongodb.net/";
 
 const conectarDB = async () => {
     try {
