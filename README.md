@@ -58,7 +58,7 @@ Bienvenido a este repositorio, una guía organizada para aprender y dominar **No
 - **Diseño y estructura de una API REST**
 - **Creación de un gestor de tareas**
 - **Uso de `Yarn` en lugar de `npm`**
-- **Manejo de CRUD con Express y MongoDB/PostgreSQL**
+- **Manejo de CRUD con Express y MongoDB**
 - **Implementación de autenticación básica**
 
 ## Cómo usar este repositorio
